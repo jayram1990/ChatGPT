@@ -12,14 +12,14 @@
         {
             "kind": "main",
             "tag": "com-sap-jay-chatgptwidget",
-            "url": "https://github.wdf.sap.corp/I502095/Widgets/blob/ChatGPT/ChatGptWidget.js",
+            "url": "https://github.com/jayram1990/ChatGPT/blob/main/ChatGptWidget.js",
             "integrity": "",
             "ignoreIntegrity": true
         },
         {
             "kind": "builder",
             "tag": "com-sap-jay-chatgptwidget-builder",
-            "url": "https://github.wdf.sap.corp/I502095/Widgets/blob/ChatGPT/ChatGptWidget_Builder.js",
+            "url": "https://github.com/jayram1990/ChatGPT/blob/main/ChatGptWidget_Builder.js",
             "integrity": "",
             "ignoreIntegrity": true
         }
