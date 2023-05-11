@@ -1,0 +1,78 @@
+{
+    "id": "com.sap.jay.chatgptwidget",
+    "version": "0.0.1",
+    "name": "ChatGPT Widget",
+    "description": "ChatGPT Custom Widget for SAP Analytics Cloud, To make your application more useful and effective.",
+    "newInstancePrefix": "ChatGptWidget",
+    "vendor": "Jayaraman Seshan",
+    "eula": "",
+    "license": "",
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAA3NCSVQICAjb4U/gAAAAb1BMVEX///+ZmZl4dXdBPj9hYGGOjpE6ODo8OjwvLC0lISIpJSaMiooyLzH/cjMxLi9GREb/ZSk2MzV9fX1MSks4NjcrJyn/WR9ycnJRT1AtKiv/TRVdXF1ra2v7VCfJyMk+PD6tra+rqqtUUlU0MTNqaGpjxDg2AAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAKhJREFUGNM9z9EagiAMBeDpEGkWNAGhqFTq/Z8xwK/+q7PtZgeg6npEMcBPJ0d1Kmg6ZnFGRZcLESnR7tpoouuVSCPPZYHWee+XxTsrvQeYQrwV97tL5uZigMeoqucTUSnWEVBX4fWaW2BYz1W3bXsLDPldcD8MoYZ3glmMjNbGLJk5igDgnLTGHazdAPo1Gdms2bZXhRmbMuNR5rNWJuX075sMYg57jV94IQ2Xqt1atQAAAABJRU5ErkJggg==",
+    "webcomponents": [
+        {
+            "kind": "main",
+            "tag": "com-sap-jay-chatgptwidget",
+            "url": "https://github.wdf.sap.corp/I502095/Widgets/blob/ChatGPT/ChatGptWidget.js",
+            "integrity": "",
+            "ignoreIntegrity": true
+        },
+        {
+            "kind": "builder",
+            "tag": "com-sap-jay-chatgptwidget-builder",
+            "url": "https://github.wdf.sap.corp/I502095/Widgets/blob/ChatGPT/ChatGptWidget_Builder.js",
+            "integrity": "",
+            "ignoreIntegrity": true
+        }
+    ],
+    "properties": {
+        "apiKey": {
+            "description": "Api Key of ChatGPT",
+            "type": "string",
+            "default": ""
+        },
+        "max_tokens": {
+            "description": "Result Max Length",
+            "type": "integer",
+            "default": 3000
+        }
+    },
+    "methods": {
+        "setApiKey": {
+            "description": "Set Api Key of ChatGPT",
+            "parameters": [
+                {
+                    "name": "apiKey",
+                    "type": "string",
+                    "description": "Api Key of ChatGPT"
+                }
+            ],
+            "body": "this.apiKey = apiKey;"
+        },
+        "getApiKey": {
+            "returnType": "string",
+            "description": "Return Api Key of ChatGPT",
+            "body": "return this.apiKey;"
+        },
+        "setMax_tokens": {
+            "description": "Set Result Max Length",
+            "parameters": [
+                {
+                    "name": "max_tokens",
+                    "type": "integer",
+                    "description": "Result Max Length"
+                }
+            ],
+            "body": "this.max_tokens = max_tokens;"
+        },
+        "getMax_tokens": {
+            "returnType": "integer",
+            "description": "Return Result Max Length",
+            "body": "return this.max_tokens;"
+        }
+    },
+    "events": {
+        "onClick": {
+            "description": "User Clicked."
+        }
+    }
+}
